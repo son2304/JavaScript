@@ -42,11 +42,12 @@ class test{
           
         console.log(funcArr[0]());
         // 함수 실행 "v1" 출력
+        // undefined 출력 *왜 나오는지 찾아볼것
 
 
 
         console.log(mapArr.get("calcFunc")(20,10));
-        // map 원소에서 "calcFunc"라는 키 값을 갖는 원소 = function(n1, n2)
+        // map 원소에서 "calcFunc"라는 키 값을 갖는 원소 = function(n1, n2) 함수ㄴ
         // 20*10 으로 200 출력
 
     }

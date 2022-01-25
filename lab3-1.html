@@ -1,0 +1,26 @@
+<!-- 자바스크립트 예제 3-1 = 이벤트 핸들러 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        function btnClick(event) {
+            alert(event.target.value+"클릭됨!!");
+        }
+        document.getElementById("b2").onclick = function(event) {alert(event.target.value+"클릭됨!!")}
+
+        // 자바스크립트 파일 분리시 btn1 안됨, html파일에 작성시 btn2 안됨 *찾아볼것
+    </script>
+    <form>
+        <input type="button" value="Button1" onclick="btnClick(event)">
+
+        <input id="b2" type="button" value="Button2">
+    </form>
+</body>
+</html>
